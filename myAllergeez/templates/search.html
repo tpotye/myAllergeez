@@ -1,0 +1,83 @@
+<html>
+    
+<style>
+        a{
+            font-family: "Raleway", sans-serif;
+            font-size: 20px;
+            color: orangered;
+            text-align: left;
+        }
+</style>
+ 
+<body style="background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZooCu5e5ynzX3Eio24rCfHjCsFPBl4j9i9umpgd8pv1ZjKNki');background-size: 100%,100%">
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topright w3-padding-large w3-xlarge">
+    <p>
+      <a href="{{ url_for('index') }}">Home
+      </a>
+    </p>
+  </div>
+<div class="w3-display-topmiddle w3-padding-large w3-xlarge">
+    <h1 class="w3-jumbo w3-animate-top w3-center">Search for Food Item</h1>
+
+</div>
+</div>
+
+<div class="wrap">
+   <div class="search">
+      <form action="/food" method="POST">
+        <h2>Enter Food Number</h2>
+      	<input type="text" name="upc">
+        <h2>Select Allergies</h2>
+        <select name="allergy1">
+            <option value="MILK">MILK</option>
+            <option value="PEANUTS">PEANUTS</option>
+            <option value="EGGS">EGGS</option>
+            <option value="TREE NUTS">TREE NUTS</option>
+            <option value="SHELLFISH">SHELLFISH</option>
+            <option value="WHEAT">WHEAT</option>
+            <option value="NONE">NONE</option>
+        </select>
+        <select name="allergy2">
+            <option value="MILK">MILK</option>
+            <option value="PEANUTS">PEANUTS</option>
+            <option value="EGGS">EGGS</option>
+            <option value="TREE NUTS">TREE NUTS</option>
+            <option value="SHELLFISH">SHELLFISH</option>
+            <option value="WHEAT">WHEAT</option>
+            <option value="NONE">NONE</option>
+        </select>
+        <select name="allergy3">
+            <option value="MILK">MILK</option>
+            <option value="PEANUTS">PEANUTS</option>
+            <option value="EGGS">EGGS</option>
+            <option value="TREE NUTS">TREE NUTS</option>
+            <option value="SHELLFISH">SHELLFISH</option>
+            <option value="WHEAT">WHEAT</option>
+            <option value="NONE">NONE</option>
+        </select>
+        <select name="allergy4">
+            <option value="MILK">MILK</option>
+            <option value="PEANUTS">PEANUTS</option>
+            <option value="EGGS">EGGS</option>
+            <option value="TREE NUTS">TREE NUTS</option>
+            <option value="SHELLFISH">SHELLFISH</option>
+            <option value="WHEAT">WHEAT</option>
+            <option value="NONE">NONE</option>
+        </select>
+        <select name="allergy5">
+            <option value="MILK">MILK</option>
+            <option value="PEANUTS">PEANUTS</option>
+            <option value="EGGS">EGGS</option>
+            <option value="TREE NUTS">TREE NUTS</option>
+            <option value="SHELLFISH">SHELLFISH</option>
+            <option value="WHEAT">WHEAT</option>
+            <option value="NONE">NONE</option>
+        </select>
+        <input type="submit" name="submit" value="Search">	
+      </form>  
+   </div>
+</div>
+</body>
+    
+</html>

@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZooCu5e5ynzX3Eio24rCfHjCsFPBl4j9i9umpgd8pv1ZjKNki');
+            background-size: 100%,100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        h1{
+            font-family: "Raleway", sans-serif;
+            color: black; 
+            font-size: 40px;
+            text-align: center;
+        }
+        p{
+            font-family: "Raleway", sans-serif;
+            font-size: 18px;
+            color: black;
+            text-align: center;
+        }
+        a{
+            font-family: "Raleway", sans-serif;
+            font-size: 20px;
+            color: orangered;
+            text-align: left;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+<body>
+  <div class="w3-display-topright w3-padding-large w3-xlarge">
+    <p>
+      <a href="{{ url_for('showSearch') }}">Search
+      </a>
+    </p>
+  </div>
+<h1> {{ answer }} </h1>
+    <p> Food Item Information </p>
+    <p> This item contains: {{ why }} </p>
+    <img src= {{img}} class = "center"> 
+</body>
+</html>
